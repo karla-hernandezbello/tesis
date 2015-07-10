@@ -1,0 +1,68 @@
+Ef\CommonBundle\Entity\Usuario:
+    type: entity
+    table: usuario
+    indexes:
+        role_id_to_role:
+            columns:
+                - role_id
+        persona_id_a_persona:
+            columns:
+                - persona_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        roleId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: role_id
+        personaId:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: persona_id
+        usuario:
+            type: string
+            nullable: false
+            length: 200
+            fixed: false
+            comment: ''
+        clave:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+        idUpdate:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: id_update
+        createdAt:
+            type: datetime
+            nullable: false
+            comment: ''
+            default: CURRENT_TIMESTAMP
+            column: created_at
+        updatedAt:
+            type: datetime
+            nullable: false
+            comment: ''
+            default: '0000-00-00 00:00:00'
+            column: updated_at
+        ultimoLogin:
+            type: datetime
+            nullable: false
+            comment: ''
+            column: ultimo_login
+    lifecycleCallbacks: {  }

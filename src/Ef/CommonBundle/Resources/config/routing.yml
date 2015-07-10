@@ -1,0 +1,3 @@
+ef_common_homepage:
+    path:     /common/{name}
+    defaults: { _controller: EfCommonBundle:Default:index }

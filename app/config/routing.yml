@@ -1,0 +1,16 @@
+EfAdminBundle_admin_ef_admin_bundle_usuarios:
+    resource: "@EfAdminBundle/Controller/Usuarios/"
+    type:     admingenerator
+    prefix:   /admin/ef_admin_bundle/usuarios
+
+ef_common:
+    resource: "@EfCommonBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ef_user:
+    resource: "@EfUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ef_admin:
+    resource: "@EfAdminBundle/Resources/config/routing.yml"
+    prefix:   /

@@ -1,0 +1,4 @@
+services:
+#    ef_common.example:
+#        class: Ef\CommonBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
