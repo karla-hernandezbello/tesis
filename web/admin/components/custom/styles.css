@@ -207,3 +207,11 @@ footer {
 }
 
 /* end custom theme */
+
+.active{
+    background-color: #32b2cc;
+}
+.top-title{
+    background-color:#111;
+    color:#fff;
+}

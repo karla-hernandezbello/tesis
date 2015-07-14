@@ -6,7 +6,7 @@
     <title>{% block title %}Welcome!{% endblock %}</title>
     <meta name="generator" content="Bootply" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="{{ asset('admin/components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/components/bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,42 +18,24 @@
 <nav class="navbar navbar-static">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="http://www.bootply.com" target="ext"><b>Bootply</b></a>
+            <a class="navbar-brand" href="http://www.bootply.com" target="ext"><img src="{{ asset('images/ef_logo.png') }}" class="img-responsive" style="height: 50px;"></a>
             <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="glyphicon glyphicon-chevron-down"></span>
             </a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Channels</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Sub-link</a></li>
-                        <li><a href="#">Sub-link</a></li>
-                        <li><a href="#">Sub-link</a></li>
-                        <li><a href="#">Sub-link</a></li>
-
-                    </ul>
-                </li>
+                <li><a href="#">Inicio</a></li>
+                <li class="active"><a href="#">Registro</a></li>
             </ul>
             <ul class="nav navbar-right navbar-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
-                    <ul class="dropdown-menu" style="padding:12px;">
-                        <form class="form-inline">
-                            <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
-                        </form>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> <i class="glyphicon glyphicon-chevron-down"></i></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> User <i class="glyphicon glyphicon-chevron-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Login</a></li>
                         <li><a href="#">Profile</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -65,8 +47,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1><a href="#" title="Scroll down for your viewing pleasure">Bootable Template</a>
-                    <p class="lead">3-column Theme + Layout for Bootstrap 3.</p></h1>
+                <h1><a href="#" title="Scroll down for your viewing pleasure">Education First</a>
+                    <p class="lead">Registro de usuario para reembolso</p></h1>
             </div>
             <div class="col-md-6">
                 <div class="well pull-right">
@@ -80,62 +62,10 @@
 <!-- Begin Body -->
 <div class="container">
     <div class="no-gutter row">
-        <!-- left side column -->
-        <div class="col-md-2">
-            <div class="panel panel-default" id="sidebar">
-                <div class="panel-heading" style="background-color:#888;color:#fff;">Menu</div>
-                <div class="panel-body">
-                    <ul class="nav nav-stacked">
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ul>
-                    <div class="accordion" id="accordion2">
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                    Accordion
-                                </a>
-                            </div>
-                            <div id="collapseOne" class="accordion-body collapse in">
-                                <div class="accordion-inner">
-                                    Content here for links, ads, etc..
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                                    Accordion
-                                </a>
-                            </div>
-                            <div id="collapseTwo" class="accordion-body collapse">
-                                <div class="accordion-inner">
-                                    Another collapse panel. Content here for links, ads, etc..
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--/acc-->
-
-                    <hr>
-
-                    <div class="col col-span-12">
-                        <i class="icon-2x icon-facebook"></i>&nbsp;
-                        <i class="icon-2x icon-twitter"></i>&nbsp;
-                        <i class="icon-2x icon-linkedin"></i>&nbsp;
-                        <i class="icon-2x icon-pinterest"></i>
-                    </div>
-
-                </div><!--/panel body-->
-            </div><!--/panel-->
-        </div><!--/end left column-->
         <!-- right content column-->
-        <div class="col-md-10" id="content">
+        <div class="col-md-12" id="content">
             <div class="panel">
-                <div class="panel-heading" style="background-color:#111;color:#fff;">Top Stories</div>
+                <div class="panel-heading top-title">Top Stories</div>
                 <div class="panel-body">
 
                     <div class="row">
