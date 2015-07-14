@@ -215,3 +215,8 @@ footer {
     background-color:#111;
     color:#fff;
 }
+.btn-info {
+    background-color: #00425D;
+    border-color: #003A51;
+    color: #fff;
+}

@@ -248,4 +248,60 @@ class Usuario
     {
         return $this->ultimoLogin;
     }
+    /**
+     * @var \Ef\CommonBundle\Entity\Persona
+     */
+    private $persona;
+
+    /**
+     * @var \Ef\CommonBundle\Entity\Rol
+     */
+    private $role;
+
+
+    /**
+     * Set persona
+     *
+     * @param \Ef\CommonBundle\Entity\Persona $persona
+     * @return Usuario
+     */
+    public function setPersona(\Ef\CommonBundle\Entity\Persona $persona = null)
+    {
+        $this->persona = $persona;
+
+        return $this;
+    }
+
+    /**
+     * Get persona
+     *
+     * @return \Ef\CommonBundle\Entity\Persona 
+     */
+    public function getPersona()
+    {
+        return $this->persona;
+    }
+
+    /**
+     * Set role
+     *
+     * @param \Ef\CommonBundle\Entity\Rol $role
+     * @return Usuario
+     */
+    public function setRole(\Ef\CommonBundle\Entity\Rol $role = null)
+    {
+        $this->role = $role;
+
+        return $this;
+    }
+
+    /**
+     * Get role
+     *
+     * @return \Ef\CommonBundle\Entity\Rol 
+     */
+    public function getRole()
+    {
+        return $this->role;
+    }
 }

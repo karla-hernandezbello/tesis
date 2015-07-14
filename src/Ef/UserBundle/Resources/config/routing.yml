@@ -1,3 +1,5 @@
+
+
 ef_user_homepage:
     path:     /registro
     defaults: { _controller: EfUserBundle:Usuario:registro }

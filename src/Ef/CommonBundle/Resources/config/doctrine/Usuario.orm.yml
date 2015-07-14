@@ -18,18 +18,6 @@ Ef\CommonBundle\Entity\Usuario:
             generator:
                 strategy: IDENTITY
     fields:
-        roleId:
-            type: integer
-            nullable: false
-            unsigned: false
-            comment: ''
-            column: role_id
-        personaId:
-            type: integer
-            nullable: false
-            unsigned: false
-            comment: ''
-            column: persona_id
         usuario:
             type: string
             nullable: false
@@ -52,17 +40,36 @@ Ef\CommonBundle\Entity\Usuario:
             type: datetime
             nullable: false
             comment: ''
-            default: CURRENT_TIMESTAMP
+            default: '0000-00-00 00:00:00'
             column: created_at
         updatedAt:
             type: datetime
-            nullable: false
+            nullable: true
             comment: ''
-            default: '0000-00-00 00:00:00'
+            default: CURRENT_TIMESTAMP
             column: updated_at
         ultimoLogin:
             type: datetime
             nullable: false
             comment: ''
             column: ultimo_login
+    manyToOne:
+        persona:
+            targetEntity: Persona
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                persona_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        role:
+            targetEntity: Rol
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                role_id:
+                    referencedColumnName: id
+            orphanRemoval: false
     lifecycleCallbacks: {  }
