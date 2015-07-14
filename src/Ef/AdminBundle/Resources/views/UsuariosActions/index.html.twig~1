@@ -1,1 +1,0 @@
-{% extends_admingenerated "EfAdminBundle:UsuariosActions:index.html.twig" %}

@@ -1,3 +1,13 @@
+EfAdminBundle_admin_ef_admin_bundle_solicitud:
+    resource: "@EfAdminBundle/Controller/Solicitud/"
+    type:     admingenerator
+    prefix:   /admin/ef_admin_bundle/solicitud
+
+EfAdminBundle_admin_ef_admin_bundle_persona:
+    resource: "@EfAdminBundle/Controller/Persona/"
+    type:     admingenerator
+    prefix:   /admin/ef_admin_bundle/persona
+
 EfAdminBundle_admin_ef_admin_bundle_usuarios:
     resource: "@EfAdminBundle/Controller/Usuarios/"
     type:     admingenerator
