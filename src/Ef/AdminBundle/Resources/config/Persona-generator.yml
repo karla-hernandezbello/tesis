@@ -1,6 +1,6 @@
 generator: admingenerator.generator.doctrine
 params:
-    model: Ef\AdminBundle\Entity\persona
+    model: Ef\CommonBundle\Entity\persona
     namespace_prefix: Ef
     concurrency_lock: ~
     bundle_name: AdminBundle
